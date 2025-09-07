@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="navbar">
+
+        <ul class="NavHome" id="NavHome">    
+            <i class="fa fa-cloud"></i><li class="Homelist"><a href="homePage.html" style="all: unset;">Home</a></button></li>
+            </i><li class="Homelist"><a href="index.html" style="all: unset;">Menu</a></li>      
+        </ul>
+
+        <ul class="NavCart" id="NavCart">
+            <li class="Shop"><a href="cartPage.html" style="all: unset;">Cart</a></li>
+            <li class="Shop"><a href="profilePage.html" style="all: unset;">Profile</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        
+        <div class="content">
+            
+            <header class="main_header">
+                <div class="head">Menu</div>
+                <div class="bighead">Menu</div> 
+            </header>
+
+            <nav class="mainNav" aria-label="mainNav">
+                    <ul class="navUl">
+                            <button class="mainBtn" onclick="highlight(`bestSeller`)" id="bestSeller"><i class="fas fa-star"></i>Best Seller</button>
+                            <button class="mainBtn" onclick="highlight(`hotDeals`)" id="hotDeals"><i class="fa fa-fire" style="color:orangered"></i> Hot Deals</button> 
+                            <button class="mainBtn" onclick="highlight(`meals`)" id="meals">Meals</button>   
+                            <button class="mainBtn" onclick="highlight(`breakFast`)" id="breakFast">Breakfast</button>            
+                            <button class="mainBtn" onclick="highlight(`chicken`)" id="chicken">Chicken</button>
+                            <button class="mainBtn" onclick="highlight(`burgers`)" id="burgers">Burgers</button>   
+                            <button class="mainBtn" onclick="highlight(`dessert`)" id="dessert">Dessert</button>                              
+                    </ul>             
+            </nav>
+
+            <div class="items">
+                <div class="itemContainer"><img src="img/1-pcBFastChcknSpicy.avif" alt =" BfastChkenSpicy" loading="lazy">
+                    <div class="itemBtn">
+                    <button>View Item</button>
+                    <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="itemContainer"><img src="img/burgerPounder.avif" alt =" BfastChkenSpicy" loading="lazy">
+                    <div class="itemBtn">
+                    <button>View Item</button>
+                    <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="itemContainer"><img src="img/frenchFries.avif" alt =" BfastChkenSpicy" loading="lazy">
+                    <div class="itemBtn">
+                    <button>View Item</button>
+                    <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="itemContainer"><img src="img/sundaeCone.avif" alt =" BfastChkenSpicy" loading="lazy">
+                    <div class="itemBtn">
+                    <button>View Item</button>
+                    <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="itemContainer"><img src="img/1-pcBFastChcknSpicy.avif" alt =" BfastChkenSpicy" loading="lazy">
+                    <div class="itemBtn">
+                    <button>View Item</button>
+                    <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="itemContainer"><img src="img/1-pcBFastChcknSpicy.avif" alt =" BfastChkenSpicy" loading="lazy">
+                    <div class="itemBtn">
+                    <button>View Item</button>
+                    <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mainFooter">
+    <div class="footerDiv">
+    <ul class="footerUl">
+        <a href=""><li> How To Order</li></a>
+        <a href=""><li>View Menu</li></a>
+        <a href=""><li>Locations</li></a>
+    </ul>
+    <ul class="footerUl">
+        <a href=""><li>Offers</li></a>
+        <a href=""><li>All Offers</li></a>
+        <a href=""><li>Gift Cards</li></a>
+    </ul>
+    <ul class="footerUl">
+        <a href=""><li>About us</li></a>
+        <a href=""><li>Careers</li></a>
+        <a href=""><li>Corporate Information</li></a>
+        <a href=""><li>Franchising</li></a>
+    </ul>
+    <ul class="footerUl">
+        <a href=""><li>About Our Website</li></a>
+        <a href=""><li>Accessibility</li></a>
+        <a href=""><li>Privacy Notice</li></a>
+        <a href=""><li>Cookie Policy</li></a>
+        <a href=""><li>Terms & Conditions</li></a>
+    </ul>
+    </div>
+    </footer>
+    <div class="subfooter" style="background-color: red;color: white;text-align: center;">Copyright © 2025 Foods Corporation. All rights reserved.</div>
+</body>
+<script>
+
+function highlight(id){
+    const unhighlight = document.querySelectorAll(`.mainBtn`);
+    unhighlight.forEach(element => {
+      element.style.color = '';
+      element.style.backgroundColor = '';
+    });
+    const highlight = document.getElementById(id);
+    highlight.style.backgroundColor = "red";
+    highlight.style.color = "white";
+}
+</script>
+</html>

@@ -1,0 +1,54 @@
+body{
+    font-family:sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+.main{
+    display: flex;
+    flex: 50% 50%;
+    background-color: white;  
+    height: 70%;
+    width: 70%;
+    padding: 50px;
+    border-radius: 10px;
+}
+@media (max-width: 480px){
+    .main{
+        flex-direction: column;
+        gap:10px
+    }    
+}
+.signDiv{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+.signForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.signForm form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.signForm form input, select{
+    border-radius: 5px;
+    border:1px solid black;
+    padding: 10px;
+}
+.signForm label{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.bdayDiv{
+    display: flex;
+    gap:5px;
+}
