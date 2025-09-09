@@ -1,0 +1,444 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    background-color: rgb(247, 237, 237);
+}
+a {
+    all: unset;
+    cursor: pointer;
+}
+/*HomePage css*/
+.home-Body{
+    display: flex;
+    background-color: white;
+
+}
+.home-Content{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+    margin-top: 6.5em;
+    background-color: white;
+   
+}
+.home-Promo{
+    display: flex;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgrey;   
+    
+}
+.home-Promo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.top-Container{
+    width: 100%;
+    margin-top: 3em;
+    height: 3em;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+    position: fixed;
+}
+.feature{
+    padding: 15px;
+    cursor: default;
+}
+.feature-Menu{
+    height: 12rem;
+    width: 80%;
+    margin-bottom: 2em;
+    display: flex;
+    gap:10px;
+    justify-content: center; 
+}
+@media (max-width: 720px) {
+    .feature-Menu{
+    height: auto;
+    width: 80%;
+    margin-bottom: 2em;
+    display: flex;
+    gap:10px;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    }
+
+}
+
+.homeItem-Card{
+    border: 1px solid grey;
+    object-fit: cover;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.homeItem-Card img{
+    height: 85%;
+    width: 100%;
+}
+.itemText{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.homeItem-Card:hover{
+    border:2px solid red
+}
+.banner-Area{
+    display: flex;
+    width: 80%;    
+    margin-bottom: 2em;
+    gap:10px; 
+    padding: 10px;
+    padding-left: 0px;
+    border-radius: 10px;
+}
+@media (max-width: 720px) {
+    .banner-Area{
+    width: 80%; 
+    margin-bottom: 2em;
+    gap:10px; 
+    padding: 10px;
+    padding-left: 0px;
+    border-radius: 10px;
+    flex-direction: column;
+    }
+}
+#address{
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+}
+#address:hover{
+    background-color: lightpink;
+    cursor: pointer;
+}
+
+.appBarcode img{
+    width: 100%;
+}
+.homeUl{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.hpLi{
+    display: inline;
+    padding: 5px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    height: 100%;
+}
+.hpLi:hover{
+    transition: 200ms;
+    background-color: lightpink;
+    cursor: pointer;
+}
+.captionContainer{
+    display: flex;
+}
+.captionText{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Menu Page Css*/
+.navbar{
+    font-weight: bold;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;    
+    background-color: rgb(218,0,28);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+@media (max-width: 720px) {
+    #address{
+        display: none;         
+    }
+    .NavCart{
+    display: flex;
+    list-style: none;
+    gap:10px;
+    cursor: pointer;
+    color: white;
+    margin-right: 40px;
+    }
+}    
+.NavHome{
+    display: flex;
+    gap:20px;
+    cursor: pointer;
+    align-items: center;
+} 
+.NavCart{
+    display: flex;
+    list-style: none;
+    gap:20px;
+    cursor: pointer;
+    color: white;
+    margin-right: 40px;
+}
+.Homelist{
+    list-style: none;
+}
+.Shop{
+    padding: 10px;
+    border-radius: 10px;
+}
+.Shop:hover{
+    background-color: lightpink;
+    color: black;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+}
+.main_header{
+    
+    cursor: default;
+    border-radius: 3px;
+}
+.head{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10%;
+    text-align: center;
+    
+    border-radius: 3px;
+}
+.bighead{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 10px;
+    font-size:2em;
+    text-align: center; 
+    border-radius: 3px;
+}
+
+.content{ 
+    width: 80%;
+    height: 100%;
+  /*box-shadow: 0px 2px 8px 4px grey; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 200px;
+    background-color: white;
+}
+.mainNav{
+    display: flex;
+}
+.navUl ,.cartNavUl{
+    display: flex;
+    list-style: none;
+    border-radius: 3px;
+    height: 40px;
+    padding-left: 0;  
+    white-space: nowrap;
+    overflow-x: auto; 
+    width: 100%; 
+    cursor: pointer;
+    gap: 10px;
+    padding: 5px;
+}
+.mainBtn{    
+    display: block; 
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;  
+    border-radius: 3px;
+    width: 100%;
+    border:none;
+    background-color: white;
+}
+
+.mainBtn:hover{
+    transition: 200ms;
+    border: 1px solid red;
+    
+}
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    padding: 5px;
+    gap:10px;
+    place-items: center;    
+
+}
+@media (max-width: 1080px) {
+  .items {
+    grid-template-columns:1fr 1fr 1fr; 
+  }
+}
+@media (max-width: 800px) {
+  .items {
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+@media (max-width: 550px) {
+  .items {
+    grid-template-columns: 1fr; 
+  }
+}
+
+.itemContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:10px;
+    height: 100%;  
+    width: 100%;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.itemContainer:hover{
+    transition: 250ms;
+    scale:1.2;
+    cursor: pointer;
+}
+.items img{
+    height: 100%;
+    width: 100%;
+}
+
+.itemBtn{
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 10px;    
+}
+.itemBtn:active{
+    
+    background-color: red;
+}
+.mainFooter{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1px;
+    border: 1px solid grey;
+}
+.footerDiv{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.footerUl{
+    list-style: none;
+    font-size: 12px;
+}
+.subFooter{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+
+
+
+
+/* Profile Page css only */
+
+#profile{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+/* Cart Page css only */
+.cartNav{
+    display: flex;
+}
+.cartNavUl{
+    display: flex;
+    list-style: none;
+    border: 1px solid black; 
+    border-radius: 3px;
+    height: 40px;
+    padding-left: 0;  
+    white-space: nowrap;
+    overflow-x: auto; 
+    width: 100%; 
+    cursor: pointer;
+    gap: 5px;
+    padding: 5px;
+}
+.cartNavLi{
+    display: block; 
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 100%;
+}
