@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Responsive Navigation</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-
+    serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2
+    100%);
+    min-height: 100vh;
+    padding: 20px;
+    background: #2c3e50;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid grey;
+}
+h1 {
+    color: #9fa0a2;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+.description {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nav-container {  
+    border-radius: 8px;
+    margin-bottom: 30px;    
+}
+
+.nav-list {
+    display: flex;
+    /* list-style: none; */
+    justify-content: center;
+    flex-wrap: wrap;
+    background: none;
+    border: none;
+}
+
+.nav-item {
+    border: 1px solid black;
+    padding: 0;
+}
+.nav-link {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 999px;
+    border-bottom: 3px solid transparent;
+    background:#9fa0a2;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.nav-link:hover {
+    background: #34495e;
+    border-bottom: 3px solid #3498db;
+}
+.nav-link.active {
+    background: #3498db;
+    border-bottom: 3px solid #2c3e50;
+}
+
+.nav-toggle {
+    display: none;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.itemContainer{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    align-items: center;
+    width: 100%;   
+    gap:20px
+}
+.items img{
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+}
+@media (max-width: 768px){
+    .nav-toggle{
+        display: block;    
+    }
+    .nav-list{
+        display:none;
+        flex-direction: column;
+    }
+    .itemContainer{
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 360px){
+    .items img{
+        height: 200px;
+        width: 250px;
+    }
+}    
+#nav-toggle:checked ~ .nav-list {
+display: flex;
+gap:5px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gallery Using Flex-Box</h1>
+            <p class="description">Creates a horizontal
+            navigation that becomes a collapsible sidebar on mobile devices responsive to 768px</p>
+        </header>
+        <div class="nav-container">
+
+            <input type="checkbox" id="nav-toggle" style="display:none;">
+            
+            <label for="nav-toggle" class="nav-toggle">☰</label> 
+            
+            <ul class="nav-list">
+                <!-- kunwari may new file  -->
+                <button class="nav-list"><a href="./index.html" class="nav-link">All</a></label>
+                <button class="nav-list"><a href="./pages/nature.html" class="nav-link">Nature</a></label> 
+                <button class="nav-list"><a href="./pages/cities.html" class="nav-link">Cities</a></label>
+                <button class="nav-list"><a href="./pages/animals.html" class="nav-link">Animals</a></label>
+                <button class="nav-list"><a href="./pages/people.html" class="nav-link">People</a></label>
+            </ul>
+        </div>
+        
+        <div class="itemContainer">
+
+            <div class="items" id="beach">
+                <img src="./img/beach.webp" alt="beach">
+            </div>
+
+            <div class="items" id="mountain">
+                <img src="./img/mountain.webp" alt="mountain">
+            </div>
+
+            
+            <div class="items" id="tiger">
+                <img src="./img/tiger.webp" alt="tiger">
+            </div>
+
+            <div class="items" id="enchanted_forest">
+                <img src="./img/enchanted_forest.webp" alt="enchanted_forest">
+            </div>
+
+            <div class="items" id="human">
+                <img src="./img/peoplee.webp" alt="people">
+            </div>
+
+            <div class="items" id="cities">
+                <img src="./img/city.webp" alt="city">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
